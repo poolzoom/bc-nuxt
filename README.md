@@ -23,7 +23,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 ### Tokens, tokens, tokens
 
-We need a store front token.  First step is to create an Admin token with scope to manage tokens
+We need a storefront token.  First step is to create an Admin token with scope to manage tokens
 
 #### Admin Token
 Advanced Settings >> API Accounts
@@ -42,13 +42,14 @@ allowed_cors_origins: [
 ]
 ```
 
-Big commerce make headless really hard to develop because they don't work with standard nuxt development setups
+Big commerce make headless hard to develop because they don't work with standard nuxt development setups
 
 So you can create a line in your hosts file (On mac /etc/hosts) like this
 ```$xslt
     127.0.0.1       nuxt.test
 ```
+To point a _domain_ to your localhost.
 
 Then because you can't use that token for a port, you can set the port to 80.
 
-But you have to run your as sudo.  This is a big no no, but yolo.
+But you have to run your as _sudo_.  This is a big no no, but yolo.
