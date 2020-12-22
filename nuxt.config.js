@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 export default {
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
@@ -13,6 +15,11 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
+  },
+
+  server: {
+    port: 80, // default: 3000
+    host: 'nuxt.test' // default: localhost
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
@@ -45,5 +52,9 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
-  }
+  },
+
+  env: {
+    token: process.env.token,
+  },
 }

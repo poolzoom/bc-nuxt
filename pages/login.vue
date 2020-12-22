@@ -51,6 +51,9 @@
         },
       };
     },
+    mounted() {
+      console.log('token ', process.env.token);
+    },
     methods: {
       async onSubmit () {
         let response = await this.$store.dispatch('login', this.credentials);

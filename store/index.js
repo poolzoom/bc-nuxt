@@ -1,13 +1,13 @@
-import axios from 'axios'
+import axios from 'axios';
 
 
 const bigCommerce = axios.create({
-  baseURL: `https://store-w125h0h2n4.mybigcommerce.com/graphql`,
+  baseURL: `http://store-w125h0h2n4.mybigcommerce.com/graphql`,
   timeout: 5000,
   headers: {
     'Content-Type': 'application/json',
     Accept: 'application/json',
-    Authorization: "Bearer ",
+    Authorization: "Bearer " + process.env.token,
   }
 });
 
