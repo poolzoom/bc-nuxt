@@ -60,4 +60,4 @@ To point a _domain_ to your localhost.
 
 Then because you can't use that token for a port, you can set the port to 80.
 
-But you have to run your as _sudo_.  This is a big no no, but yolo.
+But you have to run your project as _sudo_.  This is a big no no, but yolo.
