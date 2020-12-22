@@ -31,7 +31,7 @@ Advanced Settings >> API Accounts
 1. Click Create API Account >> Create V2/V3 API Token
 2. Click Manage for Storefront API Tokens
 
-#### Storefront Token
+#### Storefront Token and .env file
 Use https://developer.bigcommerce.com/api-reference/store-management/tokens/api-token/createtoken
 
 ```$xslt
@@ -42,6 +42,14 @@ allowed_cors_origins: [
 ]
 ```
 
+Create an .env file in the root of the project and add a token.
+
+```$xslt
+token={Add the token here}
+```
+
+
+#### Using the token
 Big commerce make headless hard to develop because they don't work with standard nuxt development setups
 
 So you can create a line in your hosts file (On mac /etc/hosts) like this
