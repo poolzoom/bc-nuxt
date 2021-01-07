@@ -6,8 +6,7 @@ const bigCommerce = axios.create({
   timeout: 5000,
   headers: {
     'Content-Type': 'application/json',
-    Accept: 'application/json',
-    Authorization: "Bearer " + process.env.token,
+    Authorization: `Bearer ${process.env.token}`,
   }
 });
 

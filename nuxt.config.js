@@ -18,8 +18,8 @@ export default {
   },
 
   server: {
-    port: 80, // default: 3000
-    host: 'nuxt.test' // default: localhost
+    default: 3000,
+    host: 'localhost' // default: localhost
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
